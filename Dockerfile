@@ -24,6 +24,7 @@ RUN git clone https://github.com/janet-lang/jpm . \
     && janet bootstrap.janet
     
 RUN jpm install spork
+RUN jpm install sh
 
 # scratch 
 FROM debian:bookworm-slim AS base
