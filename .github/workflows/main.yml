@@ -46,7 +46,6 @@ jobs:
           tags: ${{ env.IMAGE_NAME }}
   dispatch:
     runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'build-push' }}
     needs: build-push
     permissions:
       contents: write
